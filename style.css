@@ -1,0 +1,65 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar{
+    background-color: whitesmoke;
+    padding: 5px 40px
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links{
+    display: inline-block;
+    list-style: none;
+    width: 80%;
+    text-align: right;
+}
+
+.nav-links li{
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links li a:hover{
+    color: blue;
+    padding-bottom: 5px;
+    border-bottom: 1px solid blue;
+}
+
+
+
+
+
+
+
+/* div{
+    width: 25%;
+    height: 100px;
+    display: inline-block;
+}
+
+.div1{
+    background-color: red;
+}
+.div2{
+    background-color: blue;
+}
+.div3{
+    background-color: green;
+}
+.div4{
+    background-color: yellow;
+} */
