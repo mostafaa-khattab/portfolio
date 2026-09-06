@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NTI Project</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/style.css">
 </head>
   <body>
     
     <!-- start navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark position-sticky top-0 start-0 end-0" data-bs-theme="dark">
+    <nav id="navbar-example2" class="navbar navbar-expand-lg z-3 bg-dark position-sticky top-0 start-0 end-0" data-bs-theme="dark">
         <div class="container">
 
             <a class="navbar-brand text-warning" href="#home">Start Bootstrap</a>
@@ -21,10 +22,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Services</a>
+                <a class="nav-link active" aria-current="page" href="#service">Services</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
+                <a class="nav-link" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="#">About</a>
@@ -41,19 +42,187 @@
     </nav>
     <!-- end navbar -->
 
-    <!-- start main -->
-    <main id="home" class="vh-100 d-flex justify-content-center align-items-center bg-main">
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary" tabindex="0">
 
-      <div class=" text-white text-center container">
-        <h5>Welcome To Our Studio!</h5>
-        <h2 class="text-uppercase mt-3 mb-5 font-monospace">It's Nice To Meet You</h2>
+      <!-- start main -->
+      <main id="home" class="vh-100 d-flex justify-content-center align-items-center bg-main">
 
-        <button type="button" class="btn btn-warning text-white px-4 py-2">TELL ME MORE</button>
-      </div>
+        <div class=" text-white text-center container">
+          <h5 class="font-2rem">Welcome To Our Studio!</h5>
+          <h2 class="text-uppercase mt-3 mb-5 font-monospace font-3rem">It's Nice To Meet You</h2>
 
-    </main>
-    <!-- end main -->
+          <button type="button" class="btn btn-warning text-white px-4 py-2">TELL ME MORE</button>
+        </div>
 
+      </main>
+      <!-- end main -->
+
+      <!-- start section service -->
+      <section id="service" class="container py-5 my-2 text-center">
+
+        <div class="my-2 pt-5">
+          <h4 class="text-uppercase pt-5 font-2-5rem">Services</h4>
+          <p class="text-muted font-1-5rem">Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="row my-4 py-4">
+
+          <div class="col-12 col-lg-4 d-flex flex-column align-items-center justify-content-center">
+
+            <div class="icon-rounded d-flex justify-content-center align-items-center">
+              <i class="fa-solid fa-cart-shopping text-white"></i>
+            </div>
+
+            <h6 class="my-3 font-2rem">E-Commerce</h6>
+
+            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, doloribus voluptatem quis ullam in nobis assumenda non culpa repellat atque!</p>
+
+          </div>
+
+
+          <div class="col-12 col-lg-4 d-flex flex-column align-items-center justify-content-center">
+
+            <div class="icon-rounded d-flex justify-content-center align-items-center">
+              <i class="fa-solid fa-laptop text-white"></i>
+            </div>
+
+            <h6 class="my-3 font-2rem">Responsive Design</h6>
+
+            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, doloribus voluptatem quis ullam in nobis assumenda non culpa repellat atque!</p>
+
+          </div>
+
+          <div class="col-12 col-lg-4 d-flex flex-column align-items-center justify-content-center">
+
+            <div class="icon-rounded d-flex justify-content-center align-items-center">
+              <i class="fa-solid fa-lock text-white"></i>
+            </div>
+
+            <h6 class="my-3 font-2rem">Web Security</h6>
+
+            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, doloribus voluptatem quis ullam in nobis assumenda non culpa repellat atque!</p>
+
+          </div>
+
+        </div>
+
+      </section>
+      <!-- end section service -->
+
+
+      <!-- start section Portfolio -->
+        <section id="portfolio" class="container py-5 my-2 text-center">
+          <div class="my-2 pt-5">
+            <h4 class="text-uppercase pt-5 font-2-5rem">Portfolio</h4>
+            <p class="text-muted font-1-5rem">Lorem ipsum dolor sit amet.</p>
+          </div>
+
+          <div class="row my-4 py-4">
+
+            <div class="col-12 col-lg-4 d-flex flex-column align-items-center justify-content-center">
+
+              <div class="portfolio-img">
+
+                  <img class="w-100" src="https://startbootstrap.github.io/startbootstrap-agency/assets/img/portfolio/1.jpg" alt="Portfolio img 1">
+                
+                <div class="portfolio-layer">
+                  <i class="fa-solid fa-plus text-white font-2rem"></i>
+                </div>
+              </div>
+
+              <h6 class="my-3 font-2rem">Threads</h6>
+
+              <p class="text-muted">Illustration</p>
+              
+            </div>
+      
+            <div class="col-12 col-lg-4 d-flex flex-column align-items-center justify-content-center">
+
+              <div class="portfolio-img">
+                <img class="w-100" src="https://startbootstrap.github.io/startbootstrap-agency/assets/img/portfolio/2.jpg" alt="Portfolio img 2">
+
+                <div class="portfolio-layer">
+                  <i class="fa-solid fa-plus text-white font-2rem"></i>
+                </div>
+              </div>
+
+              <h6 class="my-3 font-2rem">Explore</h6>
+
+              <p class="text-muted">Graphic Design</p>
+              
+            </div>
+
+            <div class="col-12 col-lg-4 d-flex flex-column align-items-center justify-content-center">
+
+              <div class="portfolio-img">
+                <img class="w-100" src="	https://startbootstrap.github.io/startbootstrap-agency/assets/img/portfolio/3.jpg" alt="Portfolio img 3">
+
+                <div class="portfolio-layer">
+                  <i class="fa-solid fa-plus text-white font-2rem"></i>
+                </div>
+              </div>
+
+              <h6 class="my-3 font-2rem">Finish</h6>
+
+              <p class="text-muted">Identity</p>
+            
+            </div>
+
+            <div class="col-12 col-lg-4 d-flex flex-column align-items-center justify-content-center">
+
+              <div class="portfolio-img">
+                <img class="w-100" src="https://startbootstrap.github.io/startbootstrap-agency/assets/img/portfolio/4.jpg" alt="Portfolio img 4">
+
+                <div class="portfolio-layer">
+                  <i class="fa-solid fa-plus text-white font-2rem"></i>
+                </div>
+              </div>
+
+              <h6 class="my-3 font-2rem">Lines</h6>
+
+              <p class="text-muted">Branding</p>
+              
+            </div>
+
+            <div class="col-12 col-lg-4 d-flex flex-column align-items-center justify-content-center">
+
+              <div class="portfolio-img">
+                <img class="w-100" src="	https://startbootstrap.github.io/startbootstrap-agency/assets/img/portfolio/5.jpg" alt="Portfolio img 5">
+
+                <div class="portfolio-layer">
+                  <i class="fa-solid fa-plus text-white font-2rem"></i>
+                </div>
+              </div>
+
+              <h6 class="my-3 font-2rem">Southwest</h6>
+
+              <p class="text-muted">Website Design</p>
+              
+            </div>
+
+            <div class="col-12 col-lg-4 d-flex flex-column align-items-center justify-content-center">
+
+              <div class="portfolio-img">
+                <img class="w-100" src="https://startbootstrap.github.io/startbootstrap-agency/assets/img/portfolio/6.jpg" alt="Portfolio img 6">
+
+                <div class="portfolio-layer">
+                  <i class="fa-solid fa-plus text-white font-2rem"></i>
+                </div>
+              </div>
+
+              <h6 class="my-3 font-2rem">Window</h6>
+
+              <p class="text-muted">Photography</p>
+              
+            </div>
+          </div>
+
+        </section>
+      <!-- end section Portfolio -->
+
+
+
+    </div>
 
     <!-- start footer -->
     <footer class="bg-light py-4 my-2 text-center fs-3">
