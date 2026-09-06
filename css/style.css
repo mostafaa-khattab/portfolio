@@ -1,7 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
 body{
     font-family:  "Fraunces", serif;
-    height: 10000px;
+}
+
+.font-2rem{
+    font-size: 2rem;
+}
+
+.font-1-5rem{
+    font-size: 1.5rem;
+}
+
+.font-2-5rem{
+    font-size: 2.5rem;
+}
+
+.font-3rem{
+    font-size: 3rem;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #FFC107 !important;
 }
 
 /* start main */
@@ -13,14 +32,58 @@ body{
     background-attachment: fixed;
 }
 
-.bg-main h5{
-    font-size: 2rem;
-}
 
-.bg-main h2{
-    font-size: 3rem;
-}
 .bg-main button{
     font-size: 1.5rem;
 }
 /* end main */
+
+
+/* start section service */
+
+.icon-rounded{
+    width: 100px;
+    height: 100px;
+    background-color: #FFC800;
+    border-radius: 50%;
+    font-size: 2rem;
+}
+/* end section service */
+
+/* start section Portfolio */
+.portfolio-img{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 0px;
+}
+
+.portfolio-layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all .3s ease;
+    background-color: rgba(234, 187, 18, 0.851) ;
+}
+
+
+.portfolio-img:hover .portfolio-layer{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.portfolio-img img{
+    transition: all .3s ease;
+}
+
+.portfolio-img:hover img{
+    transform: scale(1.2);
+}
+
+/* end section Portfolio */
