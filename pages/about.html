@@ -6,46 +6,50 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
+
     
+
+    <!-- external -->
+     <!-- <script src="../js/script.js"></script> -->
+
+
   </head>
   <body>
-    
-   <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <ul class="nav nav-pills">
-    <li class="nav-item">
-      <a class="nav-link" href="#scrollspyHeading1">First</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#scrollspyHeading2">Second</a>
-    </li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
-        <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-  <h4 id="scrollspyHeading1">First heading</h4>
-  <p>...</p>
-  <h4 id="scrollspyHeading2">Second heading</h4>
-  <p>...</p>
-  <h4 id="scrollspyHeading3">Third heading</h4>
-  <p>...</p>
-  <h4 id="scrollspyHeading4">Fourth heading</h4>
-  <p>...</p>
-  <h4 id="scrollspyHeading5">Fifth heading</h4>
-  <p>...</p>
-</div>
-    
+  
+    <!-- 
+      1- inline 
+      2- internal
+      3- external
+    -->
+
+    <div class="mx-auto my-5 w-50 text-center">
+      <input type="text" placeholder="enter your name" class="form-control my-4" id="userName">
+      
+      <div class="invalid-feedback" id="msgError">
+        Please write User Name start Capital.
+      </div>
+
+      <h1 id="demo"></h1>
+
+      <button class="btn btn-info w-75" onclick="massage()">display</button>
+    </div>
+   
 
 
-    
+
+    <!-- inline -->
+    <!-- <button class="btn btn-success my-5" onclick="window.alert('welcome')" >ok</button> -->
+
+
+
+    <!-- internal -->
+    <!-- <script>
+      document.getElementById("demo").innerHTML = "hello world"
+      // case sensitive
+    </script> -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+    <script src="../js/script.js"></script>
   </body>
 </html>
