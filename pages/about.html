@@ -1,28 +1,54 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
 
-    
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 
-    <!-- external -->
-     <!-- <script src="../js/script.js"></script> -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <style>
+    swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
 
 
-  </head>
-  <body>
-  
-    <!-- 
+  <!-- external -->
+  <!-- <script src="../js/script.js"></script> -->
+
+
+</head>
+
+<body>
+
+  <!-- 
       1- inline 
       2- internal
       3- external
     -->
 
-    <div class="mx-auto my-5 w-50 text-center">
+  <!-- <div class="mx-auto my-5 w-50 text-center">
       <input type="text" placeholder="enter your name" class="form-control my-4" id="userName">
       
       <div class="invalid-feedback" id="msgError">
@@ -32,24 +58,129 @@
       <h1 id="demo"></h1>
 
       <button class="btn btn-info w-75" onclick="massage()">display</button>
-    </div>
-   
+    </div> -->
 
 
 
-    <!-- inline -->
-    <!-- <button class="btn btn-success my-5" onclick="window.alert('welcome')" >ok</button> -->
+
+  <!-- inline -->
+  <!-- <button class="btn btn-success my-5" onclick="window.alert('welcome')" >ok</button> -->
 
 
 
-    <!-- internal -->
-    <!-- <script>
+  <!-- internal -->
+  <!-- <script>
       document.getElementById("demo").innerHTML = "hello world"
       // case sensitive
     </script> -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    
-    <script src="../js/script.js"></script>
-  </body>
+
+  <!-- 
+    <div id="carouselExampleIndicators" class="carousel slide container w-75">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../images/bg1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../images/bg2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../images/bg3.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../images/bg4.jpg" class="d-block w-100" alt="...">
+        </div>
+        
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div> -->
+
+
+
+<swiper-container
+  class="mySwiper"
+  pagination="true"
+  effect="coverflow"
+  grab-cursor="true"
+  centered-slides="true"
+  slides-per-view="auto"
+  autoplay-delay="1000"
+  autoplay-disable-on-interaction="false"
+  coverflow-effect-rotate="50"
+  coverflow-effect-stretch="0"
+  coverflow-effect-depth="100"
+  coverflow-effect-modifier="1"
+  coverflow-effect-slide-shadows="true"
+>
+  
+  <swiper-slide>
+    <img src="https://swiperjs.com/demos/images/abstract-1.jpg">
+  </swiper-slide>
+
+  <swiper-slide>
+    <img src="https://swiperjs.com/demos/images/abstract-2.jpg">
+  </swiper-slide>
+
+  <swiper-slide>
+    <img src="https://swiperjs.com/demos/images/abstract-3.jpg">
+  </swiper-slide>
+
+  <swiper-slide>
+    <img src="https://swiperjs.com/demos/images/abstract-4.jpg">
+  </swiper-slide>
+
+  <swiper-slide>
+    <img src="https://swiperjs.com/demos/images/abstract-5.jpg">
+  </swiper-slide>
+
+  <swiper-slide>
+    <img src="https://swiperjs.com/demos/images/abstract-6.jpg">
+  </swiper-slide>
+
+  <swiper-slide>
+    <img src="https://swiperjs.com/demos/images/abstract-7.jpg">
+  </swiper-slide>
+
+  <swiper-slide>
+    <img src="https://swiperjs.com/demos/images/abstract-8.jpg">
+  </swiper-slide>
+
+  <swiper-slide>
+    <img src="https://swiperjs.com/demos/images/abstract-9.jpg">
+  </swiper-slide>
+
+</swiper-container>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-element-bundle.min.js"></script>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@<version>/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@<version>/examples/jsm/"
+    }
+  }
+</script>
+
+  <script src="../js/script.js"></script>
+</body>
+
 </html>
