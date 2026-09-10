@@ -82,7 +82,7 @@ let massage = () => {
     user.classList.add("is-invalid");
     msgError.classList.add("d-block");
   }
-}
+};
 
 // let age = 20
 // let age = "ali"
@@ -129,14 +129,21 @@ let massage = () => {
 //     console.log("odd");
 // }
 
+// let a = 1 , b = 2
+// let nums = [5 , 2 , 7]
+// console.log( Math.max(...nums) );
+
+
+
 
 
 
 // 1- function Declaration
-// function welcome(userName) {
-//   console.log("hello", userName);
-// }
-// welcome("ahmed");
+function welcome(userName , age) {
+  // console.log(`hello`, userName , "age" , age);
+  console.log(  `hello ${userName} age ${age}` )
+}
+// welcome("ahmed" , 20);
 
 
 
@@ -146,21 +153,11 @@ let massage = () => {
 
 // console.log(  hello("ali") );
 
-
-
-
-
 // function welcome(num1 , num2) {
 //     return Number(num1) + Number(num2) // 35
 // }
 
 // console.log( welcome(15 , "ali") );
-
-
-
-
-
-
 
 // 2- function expression
 // let greet = function(name){
@@ -171,9 +168,6 @@ let massage = () => {
 // setTimeout( function() { console.log("hello") }  , 1000 )
 
 // type of parameters -> named parameters , default parameters
-
-
-
 
 // array
 // let age1 = 15;
@@ -194,10 +188,6 @@ let massage = () => {
 // console.log( ages.length );
 // console.log(  ages.includes(20)   );
 
-
-
-
-
 // console.log("old" , ages);
 // ages.splice(1, 0 ,40)
 
@@ -205,19 +195,12 @@ let massage = () => {
 
 // console.log("new" , ages);
 
-
-// console.log([]  == []); // 
+// console.log([]  == []); //
 
 // console.log(["1","2","3"]  == ["1","2","3"]); //
 // console.log( ["1","2","3"]  === ["1","2","3"] ); //
 
-
-
-
 // console.log([1,2,3]  == [1,2,3]); // false
-
-
-
 
 // let arr1 = [1,2,3];
 // let arr2 = [...arr1]
@@ -228,27 +211,13 @@ let massage = () => {
 
 // console.log("array 2: " ,arr2);
 
-
-
 // console.log(arr1 == arr2); // true
 
-
-
-
-
 // console.log( JSON.stringify([1,2,3]) == JSON.stringify([1,2,3]) ); // true
-
-
-
-
-
 
 // for( let i = 0 ;  i < 5   ; i++ ){
 //     console.log( ages[i] )
 // }
-
-
-
 
 // console.log( ages[0] )
 // console.log( ages[1] )
@@ -256,4 +225,144 @@ let massage = () => {
 // console.log( ages[3] )
 // console.log( ages[4] )
 
+// Object {}
 
+let name1 = "ahmed";
+let age1 = 20;
+let email1 = "ahmed@gmail.com";
+
+// console.log( email1 );
+
+// let user1 = { name : "Ahmed" , age : 20 , email : "ahmed@gmail.com"  };
+
+// let {name} = user1;
+
+// console.log(user1.name);
+
+// console.log( user1.email  ); // dot notation
+// console.log(  user1["email"] ); // bracket notation
+
+// user1.name = "mohamed"; // edit
+// user1["phone"] = "01245747444"; // add
+
+// delete user1.age // delete
+
+// console.log(  user1 );
+
+// console.log(    {}  == {} ); // false
+// console.log(    {name : "ali" , age : 10}  == {name : "ali" , age : 10} ); // false
+
+// let user3 = {
+//   name : "mohamed",
+//   age : 30,
+//   email : "mohamed@gmail.com",
+//   phone : "01023555445",
+//   family : {
+//     FMname: "ali" ,
+//     FMMember : 25 ,
+//     family2 : {
+//       FMname2 : "ahmed"
+//     }
+//   }
+// }
+
+// let {FMname2} = user3.family.family2
+
+// console.log(FMname2);
+
+// console.log(  user3.family.family2.FMname2 );
+
+let users = [
+  { name: "may", age: 10, email: "ahmed@gmail.com" },
+  { name: "Ahmed", age: 20, email: "ahmed@gmail.com" },
+  { name: "ali", age: 20, email: "ahmed@gmail.com" },
+  { name: "mohamed", age: 5, email: "ahmed@gmail.com" },
+  { name: "aya", age: 20, email: "ahmed@gmail.com" },
+];
+
+// console.log( users[6]?.name ?? "hellllo" );
+
+
+// users.sort( (a,b)=>{
+//   return a.age - b.age
+// } )
+
+// console.log("new" , users);
+
+
+// users.forEach(  function(person , i){
+//   console.log(person.name , i);
+// } );
+
+
+
+// API -> Application Programming Interface
+
+// for (let ind = 0; ind < users.length; ind++) {
+//   console.log(users[ind].name, users[ind].age);
+// }
+
+// console.log( users[2]["name"] );
+
+// let user1 = { name : "Ahmed" , age : 20 , email : "ahmed@gmail.com"  };
+// let user2 = { name : "ali" , age : 20 , email : "ahmed@gmail.com"  };
+// let user3 = { name : "aya" , age : 20 , email : "ahmed@gmail.com"  };
+// let user4 = { name : "mohamed" , age : 20 , email : "ahmed@gmail.com"  };
+// let user5 = { name : "may" , age : 20 , email : "ahmed@gmail.com"  };
+
+
+
+
+// storage
+/***
+ * 1- local storage   5-10MB  | not delete
+ * 2- session storage 5-10MB  | delete (Tab , browser)
+ * 3- cookies storage 4KB     | delete time
+ * 4- cash storage    >100MB  | not delete
+ */
+
+
+// localStorage.setItem("hello" , "welcome")
+// console.log(  localStorage.getItem("hello")   ); // null
+// console.log(localStorage.key(1));
+// console.log(   localStorage.length  );
+// console.log( localStorage.removeItem("dddddddddddddd") ); // undefined
+// localStorage.clear()
+
+
+
+/**
+ * 
+ * @param {number 1} number 1 - الرقم الاول
+ * @param {number 2} number 2 - الرقم الثاني
+ * @returns {numbers} ناتج الجمع
+ */
+function sum(num1 , num2) { 
+    return num1 + num2
+}
+
+
+// sum()
+
+
+
+// CURDS 
+/**
+ * C -> create
+ * U -> update
+ * R -> Read
+ * D -> Delete
+ * S -> Search
+ */
+// TO-Do List
+
+
+// let age = 25
+
+// age > 20 ? console.log("yes") : console.log("no");
+
+// if(  age > 20){
+//   console.log("yes");
+// }else{
+//   console.log("no");
+// }
