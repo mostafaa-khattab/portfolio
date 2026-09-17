@@ -109,12 +109,12 @@ async function showProductDetails() {
                           <h4>Rating : ${data.rating.rate} 🌟</h4>
                       </div>`
 
-      productDetails.innerHTML = container
+      productDetails ?  productDetails.innerHTML = container : ''
 
     } else{
       // not found
       let container = `<h2 class="text-center py-4 my-2">Data Not Found 😖</h2>`
-      productDetails.innerHTML = container
+      productDetails ? productDetails.innerHTML = container : ''
     }
 
   } catch (error) {
